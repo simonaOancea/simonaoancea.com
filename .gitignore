@@ -3,3 +3,6 @@ dist/
 .astro/
 .DS_Store
 npm-debug.log*
+
+# Internal working doc — repo is public, keep this local
+HANDOFF.md
