@@ -7,12 +7,12 @@
 
 :root {
   /* ====== Typography (self-hosted via @fontsource-variable) ====== */
-  /* Young Serif: nearest free neighbor of colelee.art's paid Adobe 'Roca'
-     (same Cooper/Windsor DNA — warm, rounded, low contrast). Single weight;
-     font-synthesis is disabled on title surfaces so browsers don't fake-bold
-     it. Endgame for the literal Roca: buy the webfont (MyFonts/Type Network)
-     and self-host it here. */
-  --font-title: 'Young Serif', Georgia, serif;
+  /* Fredoka (her pick from the 8-font audition, 2026-07-23): rounded sans —
+     the direction colelee.art's own SF-Pro-Rounded fallback endorses for the
+     paid Adobe 'Roca'. Titles run at weight 500 (600-700 gets chunky).
+     Endgame for the literal Roca: buy the webfont (MyFonts, pay-once) and
+     self-host it here. */
+  --font-title: 'Fredoka Variable', 'SF Pro Rounded', system-ui, sans-serif;
   --font-title-settings: normal;
   --font-body: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', monospace;
