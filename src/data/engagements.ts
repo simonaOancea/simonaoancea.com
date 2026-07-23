@@ -56,4 +56,13 @@ export const engagements: Engagement[] = z.array(engagementSchema).parse([
   //   endDate: '2026-11-13', // TODO exact dates
   //   talk: 'modulith',
   // },
+  // {
+  //   title: 'TODO: the talk JavaCro accepted',
+  //   conference: 'JavaCro',
+  //   conferenceUrl: 'https://2026.javacro.hr/', // TODO verify
+  //   city: 'Rovinj',
+  //   date: '2026-10-11',    // TODO: your actual slot (conference runs Oct 11-14)
+  //   endDate: '2026-10-14', // TODO verify
+  //   talk: 'modulith', // TODO: or 'agentic' — match the accepted talk
+  // },
 ]);
