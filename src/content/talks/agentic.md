@@ -5,7 +5,7 @@ audience: 'TODO'
 duration: '50 min'
 language: 'English'
 order: 2
-draft: true # publish once the CFP is accepted and the content is final
+draft: true # publish when the talk has a confirmed venue and final content
 ---
 
 TODO: abstract. Your working material lives in
