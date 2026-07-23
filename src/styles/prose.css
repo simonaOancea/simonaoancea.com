@@ -7,6 +7,13 @@
   max-width: 680px;
 }
 
+/* Single-weight title font: never let the browser synthesize a fake bold */
+.blog-title,
+.blog-body h2,
+.blog-body h3 {
+  font-synthesis: none;
+}
+
 .blog-title {
   font-family: var(--font-title);
   font-variation-settings: var(--font-title-settings);
