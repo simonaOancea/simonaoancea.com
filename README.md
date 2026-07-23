@@ -1,4 +1,4 @@
-# simonaoancea.github.io
+# simonaoancea.com
 
 Personal site. [Astro](https://astro.build) static build, deployed to GitHub Pages
 by `.github/workflows/deploy.yml` on every push to `main`.
@@ -87,17 +87,20 @@ block) + one row in `src/data/themes.ts`. Nothing else changes.
 
 ## Deploy notes
 
-- Repo must stay **public** and named exactly `simonaoancea.github.io`
-  (GitHub Pages user site → served at the domain root; never add `base` to
-  `astro.config.mjs`).
+- Repo must stay **public** (GitHub Pages free plan). Renamed
+  `simonaoancea.github.io` → `simonaoancea.com` on 2026-07-23: with a custom
+  domain configured the site serves at the domain root regardless of repo
+  name — never add `base` to `astro.config.mjs`.
 - Pages source is **GitHub Actions** (repo Settings → Pages). The workflow
   builds and deploys on push, manual dispatch, and the weekly cron.
 - **Custom domain (done 2026-07-14):** canonical is `https://simonaoancea.com`
   (`public/CNAME` + Pages custom domain + `site` in astro.config). DNS lives at
   Cloudflare, all records "DNS only"/grey-cloud (apex `A` 185.199.108-111.153,
-  `CNAME www → simonaoancea.github.io`). `simonaoancea.dev` 301-redirects to
-  the .com via a Cloudflare redirect rule; `simonaoancea.github.io` 301s
-  automatically. Both domains renew yearly at Cloudflare Registrar.
+  `CNAME www → simonaoancea.github.io` — that's GitHub's infra hostname, still
+  valid after the repo rename). `simonaoancea.dev` 301-redirects to the .com
+  via a Cloudflare redirect rule. The bare `https://simonaoancea.github.io/`
+  URL died with the 2026-07-23 repo rename (404). Both domains renew yearly
+  at Cloudflare Registrar.
 
 ## Versions
 
