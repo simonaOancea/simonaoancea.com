@@ -6,3 +6,6 @@ npm-debug.log*
 
 # Internal working doc — repo is public, keep this local
 HANDOFF.md
+
+# Local font audition page (loads Google CDN — never deploy)
+font-preview.html
