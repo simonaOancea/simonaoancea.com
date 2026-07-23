@@ -50,19 +50,19 @@ export const engagements: Engagement[] = z.array(engagementSchema).parse([
   // {
   //   title: 'The Architecture Decision You Can Undo',
   //   conference: 'W-JAX', // TODO verify
-  //   conferenceUrl: 'https://jax.de/', // TODO verify
+  //   conferenceUrl: 'https://jax.de/munich/', // TODO verify
   //   city: 'Munich',
-  //   date: '2026-11-09',    // TODO exact dates
-  //   endDate: '2026-11-13', // TODO exact dates
+  //   date: '2026-11-02',    // TODO: your talk slot (conference runs Nov 2-6)
+  //   endDate: '2026-11-06', // TODO verify
   //   talk: 'modulith',
   // },
   // {
-  //   title: 'TODO: the talk JavaCro accepted',
+  //   title: 'The Architecture Decision You Can Undo',
   //   conference: 'JavaCro',
   //   conferenceUrl: 'https://2026.javacro.hr/', // TODO verify
   //   city: 'Rovinj',
-  //   date: '2026-10-11',    // TODO: your actual slot (conference runs Oct 11-14)
+  //   date: '2026-10-11',    // TODO: your talk slot (conference runs Oct 11-14)
   //   endDate: '2026-10-14', // TODO verify
-  //   talk: 'modulith', // TODO: or 'agentic' — match the accepted talk
+  //   talk: 'modulith',
   // },
 ]);
