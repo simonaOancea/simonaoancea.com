@@ -205,6 +205,12 @@ section {
   font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
+/* Single-weight title font: never let the browser synthesize a fake bold */
+.title,
+.talk-card .talk-title {
+  font-synthesis: none;
+}
+
 .title-line {
   display: block;
 }

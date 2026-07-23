@@ -7,10 +7,13 @@
 
 :root {
   /* ====== Typography (self-hosted via @fontsource-variable) ====== */
-  /* Fraunces stands in for colelee.art's paid Adobe 'Roca': a warm display
-     serif whose SOFT axis rounds the terminals. WONK stays off. */
-  --font-title: 'Fraunces Variable', Georgia, serif;
-  --font-title-settings: 'SOFT' 100, 'WONK' 0;
+  /* Young Serif: nearest free neighbor of colelee.art's paid Adobe 'Roca'
+     (same Cooper/Windsor DNA — warm, rounded, low contrast). Single weight;
+     font-synthesis is disabled on title surfaces so browsers don't fake-bold
+     it. Endgame for the literal Roca: buy the webfont (MyFonts/Type Network)
+     and self-host it here. */
+  --font-title: 'Young Serif', Georgia, serif;
+  --font-title-settings: normal;
   --font-body: 'Inter Variable', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', monospace;
 
