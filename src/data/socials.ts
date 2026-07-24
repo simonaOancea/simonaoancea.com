@@ -6,6 +6,7 @@ import { socialSchema, type Social } from './schemas';
 export const socials: Social[] = z.array(socialSchema).parse([
   { label: 'GitHub', url: 'https://github.com/simonaOancea', icon: 'github' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/simona-oancea/', icon: 'linkedin' },
+  { label: 'X', url: 'https://x.com/simonaaoancea', icon: 'x' },
   // Optional upgrade: hello@simonaoancea.com via Cloudflare Email Routing
   // (free forwarding to this Gmail) — then just swap the string here.
   { label: 'Email', url: 'mailto:simona.a.oancea@gmail.com', icon: 'email' },
