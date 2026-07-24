@@ -26,7 +26,7 @@ export const engagements: Engagement[] = z.array(engagementSchema).parse([
     conference: 'Bit Summit',
     conferenceUrl: 'https://bit-summit.com/',
     city: 'Hamburg',
-    date: '2026-09-23', // her slot, day 1 of Sep 23-24
+    date: '2026-09-23', // her slot: 16:00-17:00, day 1 of Sep 23-24
     talk: 'modulith',
   },
   {
@@ -34,7 +34,7 @@ export const engagements: Engagement[] = z.array(engagementSchema).parse([
     conference: 'BED-Con',
     conferenceUrl: 'https://bed-con.org/2026/',
     city: 'Berlin',
-    date: '2026-09-24', // slot confirmed with the organizers, day 2 of Sep 23-24
+    date: '2026-09-24', // her slot: 13:40-14:40, day 2 of Sep 23-24
     talk: 'modulith',
   },
   {
