@@ -5,9 +5,7 @@ import { socials } from '../data/socials';
 // Your existing bios (your words, ready to paste in):
 //   ~/Presentations/The Architecture Decision You Can Undo/speaker-bio.md
 //   ~/Presentations/The Architecture Decision You Can Undo/speaker-bio-devoxx-morocco.md
-// Headshot: add public/headshot.jpg, then swap the TODO below for
-//   <img class="kit-headshot" src="/headshot.jpg" alt="Simona Oancea" width="400" />
-//   and a plain <a href="/headshot.jpg" download>download</a> link.
+// Headshot: /headshot.jpg (800x800, added 2026-07-24; same source as the OG card).
 
 const email = socials.find((s) => s.icon === 'email');
 ---
@@ -28,7 +26,11 @@ const email = socials.find((s) => s.icon === 'email');
 
     <div data-animate>
       <h2 class="section-title">Headshot</h2>
-      <p class="kit-text">TODO: add a downloadable headshot (see the comment in this file).</p>
+      <img class="kit-headshot" src="/headshot.jpg" alt="Simona Oancea" width="400" height="400" />
+      <p class="kit-text">
+        <a href="/headshot.jpg" download="simona-oancea.jpg">Download the full-size headshot</a>
+        (800×800 JPEG).
+      </p>
     </div>
 
     <div data-animate>
