@@ -169,42 +169,42 @@
 }
 
 /* ========================================
-   Theme: Antwerp (light)
-   gallery white + port petrol + brick
+   Theme: Hamburg (light)
+   harbor fog + deep water + Speicherstadt brick
 ======================================== */
-[data-theme='antwerp'] {
+[data-theme='hamburg'] {
   color-scheme: light;
 
-  --color-bg: #f8f6f2;
-  --color-bg-secondary: #efece5;
-  --color-bg-tertiary: #e6e1d7;
+  --color-bg: #f4f7fa;
+  --color-bg-secondary: #e9eef4;
+  --color-bg-tertiary: #dce4ec;
 
-  --color-text: #262a2e;
-  --color-text-muted: #5c6167;
-  --color-text-dim: #8f959c;
+  --color-text: #1f2a33;
+  --color-text-muted: #4e5e6b;
+  --color-text-dim: #8695a1;
 
-  --color-primary: #14707e;
-  --color-secondary: #a34e3e;
-  --color-tertiary: #a8842f;
-  --color-accent: #14707e;
-  --color-accent-hover: #0e5a66;
-  --color-accent-glow: rgba(20, 112, 126, 0.2);
+  --color-primary: #23618e;
+  --color-secondary: #a34435;
+  --color-tertiary: #c99544;
+  --color-accent: #23618e;
+  --color-accent-hover: #1b4e74;
+  --color-accent-glow: rgba(35, 97, 142, 0.2);
 
-  --color-border: rgba(38, 42, 46, 0.1);
-  --color-border-hover: rgba(38, 42, 46, 0.2);
-  --color-surface: rgba(38, 42, 46, 0.03);
-  --color-surface-hover: rgba(38, 42, 46, 0.06);
+  --color-border: rgba(31, 42, 51, 0.1);
+  --color-border-hover: rgba(31, 42, 51, 0.2);
+  --color-surface: rgba(31, 42, 51, 0.03);
+  --color-surface-hover: rgba(31, 42, 51, 0.06);
 
   --gradient-bg: linear-gradient(
     135deg,
-    rgba(20, 112, 126, 0.08) 0%,
-    rgba(163, 78, 62, 0.06) 50%,
-    rgba(168, 132, 47, 0.05) 100%
+    rgba(35, 97, 142, 0.08) 0%,
+    rgba(163, 68, 53, 0.06) 50%,
+    rgba(201, 149, 68, 0.05) 100%
   );
 
-  --shape-1: rgba(20, 112, 126, 0.12);
-  --shape-2: rgba(163, 78, 62, 0.1);
-  --shape-3: rgba(168, 132, 47, 0.09);
+  --shape-1: rgba(35, 97, 142, 0.12);
+  --shape-2: rgba(163, 68, 53, 0.1);
+  --shape-3: rgba(201, 149, 68, 0.09);
 }
 
 /* ========================================
@@ -247,40 +247,40 @@
 }
 
 /* ========================================
-   Theme: Cluj (light)
-   lavender dusk violet
+   Theme: Rovinj (light)
+   Adriatic limestone + sea teal + terracotta roofs
 ======================================== */
-[data-theme='cluj'] {
+[data-theme='rovinj'] {
   color-scheme: light;
 
-  --color-bg: #f7f6fb;
-  --color-bg-secondary: #eceaf5;
-  --color-bg-tertiary: #e1deef;
+  --color-bg: #f8f7f2;
+  --color-bg-secondary: #efede3;
+  --color-bg-tertiary: #e5e2d4;
 
-  --color-text: #26242e;
-  --color-text-muted: #5c5a6b;
-  --color-text-dim: #928fa1;
+  --color-text: #22312f;
+  --color-text-muted: #556561;
+  --color-text-dim: #8b9793;
 
-  --color-primary: #5b54c8;
-  --color-secondary: #b25379;
-  --color-tertiary: #35897f;
-  --color-accent: #5b54c8;
-  --color-accent-hover: #4841b2;
-  --color-accent-glow: rgba(91, 84, 200, 0.2);
+  --color-primary: #0e7373;
+  --color-secondary: #c05a3e;
+  --color-tertiary: #c8a24b;
+  --color-accent: #0e7373;
+  --color-accent-hover: #0a5c5c;
+  --color-accent-glow: rgba(14, 115, 115, 0.2);
 
-  --color-border: rgba(38, 36, 46, 0.1);
-  --color-border-hover: rgba(38, 36, 46, 0.2);
-  --color-surface: rgba(38, 36, 46, 0.03);
-  --color-surface-hover: rgba(38, 36, 46, 0.06);
+  --color-border: rgba(34, 49, 47, 0.1);
+  --color-border-hover: rgba(34, 49, 47, 0.2);
+  --color-surface: rgba(34, 49, 47, 0.03);
+  --color-surface-hover: rgba(34, 49, 47, 0.06);
 
   --gradient-bg: linear-gradient(
     135deg,
-    rgba(91, 84, 200, 0.08) 0%,
-    rgba(178, 83, 121, 0.06) 50%,
-    rgba(53, 137, 127, 0.05) 100%
+    rgba(14, 115, 115, 0.08) 0%,
+    rgba(192, 90, 62, 0.06) 50%,
+    rgba(200, 162, 75, 0.05) 100%
   );
 
-  --shape-1: rgba(91, 84, 200, 0.12);
-  --shape-2: rgba(178, 83, 121, 0.1);
-  --shape-3: rgba(53, 137, 127, 0.09);
+  --shape-1: rgba(14, 115, 115, 0.12);
+  --shape-2: rgba(192, 90, 62, 0.1);
+  --shape-3: rgba(200, 162, 75, 0.09);
 }
