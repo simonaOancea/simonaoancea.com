@@ -143,6 +143,27 @@ import Icon from './Icon.astro';
       }
     };
 
+    // Favicon follows the SITE theme (her call): rebuild it as a data URI in
+    // the active theme's accent, reusing the #phoenix-mark path already in
+    // the DOM. The static favicon.svg (OS-scheme adaptive) stays as the
+    // no-JS / first-paint fallback. Safari may ignore dynamic swaps.
+    const iconLink = document.querySelector<HTMLLinkElement>('link[rel="icon"]');
+    const birdPath = document.querySelector<SVGPathElement>('#phoenix-mark path');
+
+    const accentFor = (id: string | null) =>
+      options
+        .find((o) => o.dataset.themeId === id)
+        ?.style.getPropertyValue('--swatch-accent')
+        .trim() ?? '';
+
+    const applyFavicon = () => {
+      const accent = accentFor(document.documentElement.getAttribute('data-theme'));
+      const d = birdPath?.getAttribute('d');
+      if (!iconLink || !d || !accent) return;
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200"><path fill="${accent}" d="${d}"/></svg>`;
+      iconLink.href = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+    };
+
     const close = () => {
       popover.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
@@ -170,6 +191,7 @@ import Icon from './Icon.astro';
           /* locked-down storage: theme still applies for this page view */
         }
         syncPressed();
+        applyFavicon();
       });
     }
 
@@ -185,5 +207,6 @@ import Icon from './Icon.astro';
     });
 
     syncPressed();
+    applyFavicon();
   }
 </script>
