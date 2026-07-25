@@ -740,8 +740,16 @@ section {
     font-size: 0.95rem;
   }
 
+  /* Unlike the reference, dates are core content here (a tour listing) —
+     on narrow screens each date gets its own right-aligned line. */
+  .work-item {
+    flex-wrap: wrap;
+  }
+
   .date {
-    display: none;
+    flex-basis: 100%;
+    text-align: right;
+    font-size: 0.8rem;
   }
 
   .link {

@@ -59,13 +59,10 @@ const email = socials.find((s) => s.icon === 'email');
                 <span class="bullet" aria-hidden="true">→</span>
                 <span class="work-text">
                   {e.conferenceUrl ? (
-                    <a class="inline-link" href={e.conferenceUrl} target="_blank" rel="noopener">
-                      {e.conference}
-                    </a>
+                    <a class="inline-link" href={e.conferenceUrl} target="_blank" rel="noopener">{e.conference}</a>
                   ) : (
                     e.conference
-                  )}
-                  , {e.city}
+                  )}, {e.city}
                 </span>
                 <span class="date">{formatDateRange(e.date, e.endDate)}</span>
               </li>
@@ -85,13 +82,10 @@ const email = socials.find((s) => s.icon === 'email');
                 <span class="bullet" aria-hidden="true">→</span>
                 <span class="work-text">
                   {e.conferenceUrl ? (
-                    <a class="inline-link" href={e.conferenceUrl} target="_blank" rel="noopener">
-                      {e.conference}
-                    </a>
+                    <a class="inline-link" href={e.conferenceUrl} target="_blank" rel="noopener">{e.conference}</a>
                   ) : (
                     e.conference
-                  )}
-                  , {e.city}
+                  )}, {e.city}
                   {(e.slidesUrl || e.videoUrl) && (
                     <span class="talk-links">
                       {e.slidesUrl && (
