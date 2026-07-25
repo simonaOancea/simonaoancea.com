@@ -25,7 +25,7 @@ until you do this pass — nothing real renders that you didn't write.
 - [ ] `src/content/talks/agentic.md` — fill in when that talk gets a venue
 - [ ] `src/data/engagements.ts` — narrow JavaCro to your talk day once its
       schedule publishes (all other dates are confirmed)
-- [ ] `src/data/work.ts` — `currently` and `previously` items
+- [ ] `src/data/work.ts` — `previously` items (`currently` is done)
 - [ ] `src/pages/404.astro` — the not-found line
 - [ ] `public/favicon.svg` — replace the placeholder "S." monogram
 - [ ] Delete the two `example-*.md` files in `src/content/writing/` when you

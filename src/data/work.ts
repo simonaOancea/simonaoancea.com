@@ -6,12 +6,18 @@ import { workItemSchema, type WorkItem } from './schemas';
 // convention). Items render top-to-bottom in array order; `date` is an
 // optional display string like 'Mar 2026'.
 
+// Her approved items (2026-07-25) — deliberately evergreen: no dates, counts,
+// or geography, so the section ages slowly. Revisit after the conference season.
 export const currently: WorkItem[] = z.array(workItemSchema).parse([
-  // TODO: replace with what you are actually doing right now. Add or delete
-  // items freely — three to five reads best.
-  { text: 'TODO: the main thing you are building, e.g. leading X at <strong>Somewhere</strong>' },
-  { text: 'TODO: a talk you are preparing, with a <a class="inline-link" href="https://example.com">link</a>' },
-  { text: 'TODO: a side project or focus area' },
+  {
+    text: 'Taking <a class="inline-link" href="/talks/modulith/"><strong>The Architecture Decision You Can Undo</strong></a> on tour.',
+  },
+  {
+    text: 'Migrating a large legacy system at <strong>Deutsche Bank</strong> — my daily reality check for everything I say on stage.',
+  },
+  {
+    text: 'Going deep on <strong>agentic engineering</strong> — figuring out what it takes to let AI agents into a production dev loop without regretting it.',
+  },
 ]);
 
 export const previously: WorkItem[] = z.array(workItemSchema).parse([
