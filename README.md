@@ -23,7 +23,7 @@ Everything marked `TODO` is placeholder. The site is live but anonymous-safe
 until you do this pass — nothing real renders that you didn't write.
 
 - [ ] `src/content/talks/agentic.md` — fill in when that talk gets a venue
-- [ ] `src/pages/index.astro` — the hero `intro` line + the CTA topics line
+- [ ] `src/pages/index.astro` — the CTA topics line (hero intro is done)
 - [ ] `src/data/site.ts` — site `description` (search results + link previews)
 - [ ] `src/data/engagements.ts` — narrow JavaCro to your talk day once its
       schedule publishes (all other dates are confirmed)
