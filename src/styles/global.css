@@ -226,6 +226,16 @@ section {
   margin-bottom: 20px;
 }
 
+/* Inline Romanian tricolor (SVG, not emoji — Windows has no flag emoji) */
+.flag-ro {
+  display: inline-block;
+  width: 1.05em;
+  height: 0.7em;
+  border-radius: 2px;
+  vertical-align: -0.05em;
+  margin-left: 0.1em;
+}
+
 .hero-cta {
   font-family: var(--font-body);
   font-size: 1rem;
