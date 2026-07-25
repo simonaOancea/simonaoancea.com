@@ -22,10 +22,7 @@ npm run check     # typecheck (also validates the data files)
 Everything marked `TODO` is placeholder. The site is live but anonymous-safe
 until you do this pass — nothing real renders that you didn't write.
 
-- [ ] `src/content/talks/modulith.md` — **review the pre-filled abstract**
-      (your words, from talk-abstract-final.md), fill the takeaways, verify
-      audience/duration, then flip `draft: false` to publish
-- [ ] `src/content/talks/agentic.md` — fill in once the Devoxx CFP resolves
+- [ ] `src/content/talks/agentic.md` — fill in when that talk gets a venue
 - [ ] `src/pages/index.astro` — the hero `intro` line + the CTA topics line
 - [ ] `src/data/site.ts` — site `description` (search results + link previews)
 - [ ] `src/data/engagements.ts` — narrow JavaCro to your talk day once its

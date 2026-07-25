@@ -1,12 +1,12 @@
 ---
 title: 'The Architecture Decision You Can Undo: Microservice Boundaries with Spring Modulith'
 hook: 'The decisions that matter most are the ones you can undo.'
-audience: 'Intermediate–advanced' # TODO: verify the level you pitch it at
-duration: '50 min' # TODO: verify against your actual conference slots
+audience: 'Intermediate–advanced'
+duration: '60 min'
 language: 'English'
 # deckUrl: 'https://…' # TODO: add when the deck is public
 order: 1
-draft: true # abstract + title approved by her 2026-07-24; awaiting takeaways + meta confirm, then publish
+draft: false
 ---
 
 We've spent a decade telling developers that microservices are the grown-up way to build software. That real engineers decompose everything into independently deployable services from day one. And we've spent that same decade dealing with the fallout. Distributed debugging. Eventual consistency headaches. Integration tests held together by prayer. And teams that can't ship a feature without a cross-team deployment ceremony.
@@ -19,6 +19,6 @@ Because the decisions that matter most are the ones you can undo.
 
 ## What you'll take home
 
-- TODO: takeaway one
-- TODO: takeaway two
-- TODO: takeaway three
+- A rule you can use on Monday: direct calls when you need the answer *now*, events when you need the reaction *eventually* — and how Spring Modulith turns that rule into something the build enforces.
+- How to bolt a new capability onto a live business flow with zero changes to existing modules — one listener class, nothing else.
+- Why async doesn't mean decoupled: listening to an event is still a dependency — and Modulith's cycle report will show it to you.
