@@ -26,7 +26,6 @@ until you do this pass — nothing real renders that you didn't write.
 - [ ] `src/data/engagements.ts` — narrow JavaCro to your talk day once its
       schedule publishes (all other dates are confirmed)
 - [ ] `src/pages/404.astro` — the not-found line
-- [ ] `public/favicon.svg` — replace the placeholder "S." monogram
 - [ ] Delete the two `example-*.md` files in `src/content/writing/` when you
       publish your first real article
 
@@ -107,3 +106,8 @@ The **content** is not: everything in `src/content/`, the prose in
 `src/data/`, and all images and photos (including the headshot and the OG
 card) are © Simona Oancea, all rights reserved. Please don't republish the
 writing, talk abstracts, bios, or photos.
+
+The **phoenix mark** (favicon, footer glyph, background) is
+[icon #8161382](https://thenounproject.com/icon/phoenix-8161382/) from The
+Noun Project, used under a purchased royalty-free license — it is not covered
+by the MIT grant either.

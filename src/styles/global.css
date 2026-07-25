@@ -463,6 +463,34 @@ section {
 }
 
 /* ========================================
+   Ambient phoenix — her mark, huge and faint behind the hero.
+   Theme-adaptive: 7% of the current accent. Scrolls with the page.
+======================================== */
+.ambient-phoenix {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 780px;
+  height: 780px;
+  z-index: -1;
+  pointer-events: none;
+  color: color-mix(in srgb, var(--color-accent) 7%, transparent);
+}
+
+.ambient-phoenix svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ambient-phoenix svg {
+    animation: drift-b 44s ease-in-out infinite alternate;
+  }
+}
+
+/* ========================================
    Footer
 ======================================== */
 .site-footer {
@@ -483,6 +511,14 @@ section {
 .site-footer a:hover {
   color: var(--color-accent);
   border-color: var(--color-accent);
+}
+
+.footer-mark {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  vertical-align: -2px;
+  margin-right: 2px;
 }
 
 /* ========================================
