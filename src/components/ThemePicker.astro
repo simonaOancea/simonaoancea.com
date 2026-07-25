@@ -22,6 +22,7 @@ import Icon from './Icon.astro';
           data-theme-id={t.id}
           data-scheme={t.scheme}
           data-bg={t.bg}
+          data-accent={t.accent}
           aria-pressed="false"
         >
           <span class="swatch" aria-hidden="true" style={`--swatch-bg: ${t.bg}; --swatch-accent: ${t.accent};`} />
@@ -151,10 +152,7 @@ import Icon from './Icon.astro';
     const birdPath = document.querySelector<SVGPathElement>('#phoenix-mark path');
 
     const accentFor = (id: string | null) =>
-      options
-        .find((o) => o.dataset.themeId === id)
-        ?.style.getPropertyValue('--swatch-accent')
-        .trim() ?? '';
+      options.find((o) => o.dataset.themeId === id)?.dataset.accent ?? '';
 
     const applyFavicon = () => {
       const accent = accentFor(document.documentElement.getAttribute('data-theme'));
