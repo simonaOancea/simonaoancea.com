@@ -3,9 +3,9 @@
 Personal site. [Astro](https://astro.build) static build, deployed to GitHub Pages
 by `.github/workflows/deploy.yml` on every push to `main`.
 
-Design: same bones as [colelee.art](https://colelee.art/) with its own identity —
-six themes named after conference cities, self-hosted fonts, zero runtime JS
-dependencies.
+Design: minimal and text-first — six themes named after the cities of the
+current speaking season, a licensed phoenix mark, self-hosted fonts, zero
+runtime JS dependencies.
 
 ## Commands
 

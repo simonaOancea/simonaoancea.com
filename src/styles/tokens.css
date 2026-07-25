@@ -7,11 +7,9 @@
 
 :root {
   /* ====== Typography (self-hosted via @fontsource-variable) ====== */
-  /* Fredoka (her pick from the 8-font audition, 2026-07-23): rounded sans —
-     the direction colelee.art's own SF-Pro-Rounded fallback endorses for the
-     paid Adobe 'Roca'. Titles run at weight 500 (600-700 gets chunky).
-     Endgame for the literal Roca: buy the webfont (MyFonts, pay-once) and
-     self-host it here. */
+  /* Fredoka (her pick from an 8-font audition, 2026-07-23): a rounded sans
+     in the SF-Pro-Rounded spirit. Titles run at weight 500 (600-700 gets
+     chunky — don't re-bold). */
   --font-title: 'Fredoka Variable', 'SF Pro Rounded', system-ui, sans-serif;
   --font-title-settings: normal;
   --font-body: 'Inter Variable', system-ui, sans-serif;
