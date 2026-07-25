@@ -20,9 +20,10 @@ export const currently: WorkItem[] = z.array(workItemSchema).parse([
   },
 ]);
 
+// Her approved single line (2026-07-25) — deliberately summarized and
+// employer-free (LinkedIn holds the full ledger; no degree by her choice).
 export const previously: WorkItem[] = z.array(workItemSchema).parse([
-  // TODO: your track record, newest first.
-  { text: 'TODO: previous role — what you did at <strong>Company</strong>' },
-  { text: 'TODO: the one-line version of your earlier years' },
-  { text: 'TODO: degree, <strong>University</strong>' },
+  {
+    text: 'Backend engineering across <strong>gaming platforms, payments, and banking</strong>.',
+  },
 ]);
