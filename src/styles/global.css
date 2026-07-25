@@ -463,6 +463,29 @@ section {
 }
 
 /* ========================================
+   Footer
+======================================== */
+.site-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-2xl);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+}
+
+.site-footer a {
+  color: var(--color-text-dim);
+  border-bottom: 1px solid var(--color-border-hover);
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* ========================================
    Background shapes
 ======================================== */
 .bg-shapes {
@@ -637,6 +660,10 @@ section {
 @media (max-width: 640px) {
   .container {
     padding: 88px var(--space-md) var(--space-3xl);
+  }
+
+  .site-footer {
+    padding: 0 var(--space-md) var(--space-xl);
   }
 
   section {

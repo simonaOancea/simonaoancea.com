@@ -72,6 +72,15 @@ const { title, description, ogType, withBack = false } = Astro.props;
       <slot />
     </main>
 
+    <footer class="site-footer" data-animate>
+      <p>
+        © {new Date().getFullYear()} Simona Oancea ·
+        <a href="https://github.com/simonaOancea/simonaoancea.com" target="_blank" rel="noopener">
+          MIT-licensed source
+        </a>
+      </p>
+    </footer>
+
     <ThemePicker />
 
     <script>
