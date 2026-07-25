@@ -2,9 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { socials } from '../data/socials';
 
-// Your existing bios (your words, ready to paste in):
-//   ~/Presentations/The Architecture Decision You Can Undo/speaker-bio.md
-//   ~/Presentations/The Architecture Decision You Can Undo/speaker-bio-devoxx-morocco.md
+// Bios published 2026-07-25 from her existing drafts (short = speaker-bio.md
+// verbatim; long = speaker-bio-devoxx-morocco.md with the team-bootstrapping
+// clause removed — it was word-for-word her LinkedIn line, and she avoids
+// verbatim reuse across public surfaces).
 // Headshot: /headshot.jpg (800x800, added 2026-07-24; same source as the OG card).
 
 const email = socials.find((s) => s.icon === 'email');
@@ -16,12 +17,41 @@ const email = socials.find((s) => s.icon === 'email');
 
     <div data-animate>
       <h2 class="section-title">Short bio</h2>
-      <p class="kit-text">TODO: the 50–70 word bio organizers paste into programs.</p>
+      <p class="kit-text">
+        Simona Oancea has spent over a decade building backend systems where failure
+        is expensive. Gaming platforms. Financial infrastructure. The kind of software
+        where architecture isn't an academic exercise, it's the thing that wakes you
+        up at night.
+      </p>
+      <p class="kit-text">
+        Most teams treat architecture as something you get right at the start and then
+        defend. She thinks the opposite: that the mark of a well-built system is how
+        gracefully it lets you change your mind.
+      </p>
     </div>
 
     <div data-animate>
       <h2 class="section-title">Long bio</h2>
-      <p class="kit-text">TODO: the fuller version, for event pages that want more.</p>
+      <p class="kit-text">
+        Simona Oancea has spent a decade building backend systems in the parts of the
+        industry where being wrong is expensive — banking, payments, and large-scale
+        gaming. She's now at Deutsche Bank, leading the migration of a deal management
+        system in investment banking.
+      </p>
+      <p class="kit-text">
+        The lesson she's drawn from all of them is this: it isn't the size of an
+        architecture decision that hurts you. It's how reversible it is. The famous
+        ones — the framework debates, the database choices — usually get the scrutiny.
+        What does the damage is the choice you made on a Tuesday afternoon and didn't
+        realize was architecture until three years later, when it was already
+        load-bearing.
+      </p>
+      <p class="kit-text">
+        Most teams get this wrong because they treat architecture as something you get
+        right at the start and then defend. She thinks the opposite — the mark of a
+        well-built system is how gracefully it lets you change your mind. The
+        decisions that matter most are the ones you can undo.
+      </p>
     </div>
 
     <div data-animate>
@@ -38,11 +68,11 @@ const email = socials.find((s) => s.icon === 'email');
       <ul class="work-list">
         <li class="work-item">
           <span class="bullet" aria-hidden="true">→</span>
-          <span class="work-text">Based in <strong>TODO: city</strong></span>
+          <span class="work-text">Based in <strong>Bucharest, Romania</strong></span>
         </li>
         <li class="work-item">
           <span class="bullet" aria-hidden="true">→</span>
-          <span class="work-text">Speaks <strong>TODO: languages</strong></span>
+          <span class="work-text">Speaks <strong>Romanian and English</strong></span>
         </li>
         <li class="work-item">
           <span class="bullet" aria-hidden="true">→</span>

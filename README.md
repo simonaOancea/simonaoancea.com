@@ -25,8 +25,6 @@ until you do this pass — nothing real renders that you didn't write.
 - [ ] `src/content/talks/agentic.md` — fill in when that talk gets a venue
 - [ ] `src/data/engagements.ts` — narrow JavaCro to your talk day once its
       schedule publishes (all other dates are confirmed)
-- [ ] `src/pages/speaker-kit.astro` — short bio, long bio, facts (your existing
-      bios are referenced in a comment at the top of the file); headshot is done
 - [ ] `src/data/work.ts` — `currently` and `previously` items
 - [ ] `src/pages/404.astro` — the not-found line
 - [ ] `public/favicon.svg` — replace the placeholder "S." monogram
