@@ -97,3 +97,14 @@ block) + one row in `src/data/themes.ts`. Nothing else changes.
 Pinned to `astro@^5.18.2` deliberately (v7 is latest; every API used here is
 verified against v5, which still receives patches). Upgrade later with
 `npx @astrojs/upgrade` after reading the v6/v7 migration guides.
+
+## License
+
+The **code** in this repository (components, layouts, styles, scripts,
+config) is licensed under the [MIT License](LICENSE) — borrow the setup
+freely.
+
+The **content** is not: everything in `src/content/`, the prose in
+`src/data/`, and all images and photos (including the headshot and the OG
+card) are © Simona Oancea, all rights reserved. Please don't republish the
+writing, talk abstracts, bios, or photos.
