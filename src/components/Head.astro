@@ -38,3 +38,12 @@ const imageUrl = new URL(ogImage, Astro.site);
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageUrl} />
+
+{/* Cloudflare Web Analytics — cookie-less, no consent banner needed. The
+    site's one deliberate third-party request (added 2026-07-26). The token
+    is public by design; the dashboard lives in her Cloudflare account. */}
+<script
+  is:inline
+  type="module"
+  src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "d2856de6bb904bb8abb93249336a6083"}'></script>
