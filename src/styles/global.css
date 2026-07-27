@@ -713,6 +713,11 @@ section {
     padding: 0 var(--space-md) var(--space-xl);
   }
 
+  /* On phones the bird sits entirely under text — whisper it down a notch */
+  .ambient-phoenix {
+    color: color-mix(in srgb, var(--color-accent) 5%, transparent);
+  }
+
   section {
     margin-bottom: var(--space-2xl);
   }
