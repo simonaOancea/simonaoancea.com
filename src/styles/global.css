@@ -481,8 +481,9 @@ section {
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  width: 780px;
-  height: 780px;
+  /* Fits the viewport on phones (whole bird visible), caps at 780px on desktop */
+  width: min(780px, 94vw);
+  aspect-ratio: 1;
   z-index: -1;
   pointer-events: none;
   color: color-mix(in srgb, var(--color-accent) 7%, transparent);
