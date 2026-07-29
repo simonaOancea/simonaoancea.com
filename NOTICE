@@ -1,0 +1,26 @@
+NOTICE — licensing scope for this repository
+
+Copyright (c) 2026 Simona Oancea
+
+1. CODE — MIT
+   The source code in this repository (components, layouts, styles, scripts,
+   configuration, and build tooling) is licensed under the MIT License; see
+   the LICENSE file.
+
+2. CONTENT — ALL RIGHTS RESERVED
+   The MIT grant does NOT extend to the site's content, which remains the
+   exclusive property of Simona Oancea. This includes, without limitation:
+     - all prose and writing: everything under src/content/, the text values
+       in src/data/, page copy, talk abstracts, takeaways, and biographies;
+     - all photographs and images, including public/headshot.jpg and
+       public/og-default.jpg.
+   No permission is granted to reproduce, republish, or redistribute this
+   content.
+
+3. PHOENIX MARK — THIRD-PARTY LICENSE
+   The phoenix icon (used in public/favicon.svg and inline in the site
+   layout) is icon #8161382 by its creator via The Noun Project, used here
+   under a purchased royalty-free license held by Simona Oancea. It is NOT
+   covered by the MIT grant and no rights to it flow to recipients of this
+   repository. Obtain your own license at thenounproject.com if you wish to
+   use it.
