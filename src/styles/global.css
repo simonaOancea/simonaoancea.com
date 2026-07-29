@@ -263,10 +263,20 @@ section {
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--color-text);
-  transition: color var(--transition-normal);
+  border-bottom: 1px solid var(--color-border-hover);
+  transition: color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .talk-card .talk-title:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.talk-more {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
   color: var(--color-accent);
 }
 

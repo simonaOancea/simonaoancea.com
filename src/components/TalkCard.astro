@@ -14,4 +14,5 @@ const { talk } = Astro.props;
   </a>
   <p class="talk-hook">{talk.data.hook}</p>
   <p class="talk-meta">{talk.data.audience} · {talk.data.duration} · {talk.data.language}</p>
+  <a class="talk-more" href={`/talks/${talk.id}/`}>Abstract & details →</a>
 </div>
