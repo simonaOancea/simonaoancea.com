@@ -14,6 +14,34 @@ const { title, description, ogType = 'website', ogImage = '/og-default.jpg' } = 
 const fullTitle = title === site.name ? title : `${title} · ${site.name}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = new URL(ogImage, Astro.site);
+
+// Person entity for search engines (schema.org JSON-LD). sameAs binds her
+// public profiles into one Knowledge Graph entity with this site as its home.
+// Facts only — role/employer as publicly stated in her bio.
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  url: site.url,
+  image: `${site.url}/headshot.jpg`,
+  jobTitle: 'Senior Software Engineer',
+  worksFor: { '@type': 'Organization', name: 'Deutsche Bank' },
+  knowsAbout: [
+    'Software architecture',
+    'Large-scale distributed systems',
+    'Backend engineering',
+    'Enterprise Java',
+    'Agentic engineering',
+  ],
+  sameAs: [
+    'https://www.linkedin.com/in/simona-oancea/',
+    'https://github.com/simonaOancea',
+    'https://x.com/simonaaoancea',
+    'https://sessionize.com/simona/',
+    'https://medium.com/@simona.a.oancea',
+    'https://mastodon.social/@simonaoancea',
+  ],
+};
 ---
 
 <meta charset="UTF-8" />
@@ -26,6 +54,10 @@ const imageUrl = new URL(ogImage, Astro.site);
 <link rel="alternate" type="application/rss+xml" title={site.name} href="/rss.xml" />
 <meta name="theme-color" content={DEFAULT_THEME.bg} />
 <meta name="generator" content={Astro.generator} />
+{/* rel=me: Mastodon ownership verification (green check on her profile once
+    simonaoancea.com is listed in its metadata fields) */}
+<link rel="me" href="https://mastodon.social/@simonaoancea" />
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
 <meta property="og:title" content={fullTitle} />
 <meta property="og:type" content={ogType} />
