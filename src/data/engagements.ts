@@ -42,8 +42,7 @@ export const engagements: Engagement[] = z.array(engagementSchema).parse([
     conference: 'JavaCro',
     conferenceUrl: 'https://2026.javacro.hr/',
     city: 'Rovinj',
-    date: '2026-10-11', // TODO: narrow to your talk day once the schedule is out
-    endDate: '2026-10-14',
+    date: '2026-10-13', // her slot: 11:00-11:45, day 3 of Oct 11-14
     talk: 'modulith',
   },
   {
