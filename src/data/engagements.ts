@@ -10,7 +10,9 @@ import { engagementSchema, type Engagement } from './schemas';
 // in src/content/talks/ — it links the row to the talk page and lists the
 // delivery there. slidesUrl/videoUrl render once the talk is past.
 //
-// Dates/URLs verified against the conference sites on 2026-07-24.
+// Dates/URLs verified against the conference sites on 2026-07-24. Private
+// deliveries have no public event page: they carry no conferenceUrl and are
+// listed from her own calendar, so there is nothing to verify them against.
 
 export const engagements: Engagement[] = z.array(engagementSchema).parse([
   {
@@ -35,6 +37,13 @@ export const engagements: Engagement[] = z.array(engagementSchema).parse([
     conferenceUrl: 'https://bed-con.org/2026/',
     city: 'Berlin',
     date: '2026-09-24', // her slot: 13:40-14:40, day 2 of Sep 23-24
+    talk: 'modulith',
+  },
+  {
+    title: 'The Architecture Decision You Can Undo',
+    conference: 'Luxoft (internal)',
+    city: 'Online',
+    date: '2026-10-05', // her slot: 17:00-18:00; internal session, no public registration
     talk: 'modulith',
   },
   {
