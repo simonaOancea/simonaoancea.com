@@ -9,7 +9,7 @@ const now = Date.now();
 
 // An engagement stays "upcoming" through the whole of its final day: dates
 // parse as UTC midnight and the +24h grace covers European timezones on the
-// UTC build runner. The split is computed at build time — the weekly deploy
+// UTC build runner. The split is computed at build time — the daily deploy
 // cron keeps it fresh between content pushes.
 const cutoff = (e: Engagement) => (e.endDate ?? e.date).getTime() + DAY_MS;
 

@@ -5,11 +5,14 @@ on:
     branches: [main]
   # Manual redeploy button (Actions tab -> Deploy to GitHub Pages -> Run workflow).
   workflow_dispatch:
-  # Weekly rebuild (Mondays 04:20 UTC) so talks roll from Upcoming to Past
-  # without a commit. GitHub disables cron workflows after ~60 days without
+  # Daily rebuild (04:20 UTC) so talks roll from Upcoming to Past without a
+  # commit. The split is computed at build time, so this cadence is the
+  # worst-case staleness: daily keeps a finished talk from showing as upcoming
+  # for more than about a day. GitHub's scheduler is best-effort and can fire
+  # hours late. GitHub also disables cron workflows after ~60 days without
   # repo activity — if a past talk shows as upcoming, press Run workflow.
   schedule:
-    - cron: '20 4 * * 1'
+    - cron: '20 4 * * *'
 
 permissions:
   contents: read

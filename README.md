@@ -43,10 +43,12 @@ after its final day (`endDate` for multi-day events), and its
 `slidesUrl`/`videoUrl` then render as links. Set `talk: '<slug>'` to link the
 engagement to its talk page and list it in that page's delivery history.
 
-The Upcoming→Past split is computed at build time. A weekly scheduled deploy
-(Mondays 04:20 UTC) keeps it fresh without commits. GitHub pauses cron
-workflows after ~60 days of repo inactivity — if a past engagement still shows
-as upcoming, go to Actions → Deploy to GitHub Pages → Run workflow.
+The Upcoming→Past split is computed at build time. A daily scheduled deploy
+(04:20 UTC) keeps it fresh without commits, so a finished engagement shows as
+upcoming for at most about a day — GitHub's scheduler is best-effort and can
+fire hours late. GitHub pauses cron workflows after ~60 days of repo
+inactivity — if a past engagement still shows as upcoming, go to Actions →
+Deploy to GitHub Pages → Run workflow.
 
 ## How to add an article
 
@@ -80,7 +82,7 @@ block) + one row in `src/data/themes.ts`. Nothing else changes.
   domain configured the site serves at the domain root regardless of repo
   name — never add `base` to `astro.config.mjs`.
 - Pages source is **GitHub Actions** (repo Settings → Pages). The workflow
-  builds and deploys on push, manual dispatch, and the weekly cron.
+  builds and deploys on push, manual dispatch, and the daily cron.
 - **Custom domain (done 2026-07-14):** canonical is `https://simonaoancea.com`
   (`public/CNAME` + Pages custom domain + `site` in astro.config). DNS lives at
   Cloudflare, all records "DNS only"/grey-cloud (apex `A` 185.199.108-111.153,
